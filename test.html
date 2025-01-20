@@ -1,0 +1,326 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200..1000&family=Rubik:wght@300..900&display=swap');
+
+  * {
+    font-family: "Inter", sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .flex-col {
+    flex-direction: column;
+  }
+
+  .gap-20 {
+    gap: 20px;
+  }
+
+  .items-center {
+    align-items: center;
+  }
+
+  .h-10 {
+    height: 2.5rem;
+  }
+
+  .min-w-10 {
+    min-width: 2.5rem;
+  }
+
+  .p-4 {
+    padding: 1rem;
+  }
+
+  .rounded-full {
+    border-radius: 9999px;
+  }
+
+  .bg-neutral-100 {
+    background-color: #f7f7f7;
+  }
+
+  .shadow-2xl {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  }
+
+  .rounded-xl {
+    border-radius: 1rem;
+  }
+
+  .text-white {
+    color: white;
+  }
+
+  .text-sm {
+    font-size: 0.875rem;
+  }
+
+  .text-lg {
+    font-size: 1.125rem;
+  }
+
+  .font-semibold {
+    font-weight: 600;
+  }
+
+  .font-normal {
+    font-weight: normal;
+  }
+
+  .line-through {
+    text-decoration: line-through;
+  }
+
+  .bg-white {
+    background-color: white;
+  }
+
+  .bg-red-500 {
+    background-color: #f87171;
+  }
+
+  .bg-blue-500 {
+    background-color: #3b82f6;
+  }
+
+  .bg-green-500 {
+    background-color: #10b981;
+  }
+
+  .bg-yellow-500 {
+    background-color: #fbbf24;
+  }
+
+  .bg-orange-500 {
+    background-color: #fb923c;
+  }
+
+  .bg-gray-500 {
+    background-color: #6b7280;
+  }
+
+  .card {
+    background: rgba(0, 0, 0, 0.84);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    color: white;
+    width: 100%;
+    max-width: 330px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 24px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Add a noise overlay behind the content */
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('https://www.transparenttextures.com/patterns/bedge-grunge.png') repeat;
+    opacity: 0.3;
+    pointer-events: none;
+  }
+
+  .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+  }
+
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    z-index: 1;
+  }
+
+  .card-content h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+
+  .card-content .price {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .card-content .price .discount {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ff4747;
+  }
+
+  .card-content .price .old-price {
+    text-decoration: line-through;
+    font-size: 0.875rem;
+    color: #999999;
+  }
+
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    background-color: #3b82f6;
+    color: white;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .btn:hover {
+    background-color: #2563eb;
+  }
+
+  /* Container for the cards */
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  /* For mobile devices (1 card per row) */
+  @media (max-width: 767px) {
+    .card {
+      width: 100%; /* Full width for mobile */
+    }
+  }
+
+  /* For laptops or larger screens (3 cards per row) */
+  @media (min-width: 768px) {
+    .card {
+      width: calc(33.3333% - 20px); /* 3 cards per row */
+    }
+  }
+
+  /* Ensure that the cards maintain consistent gap between them */
+  .cards-container > .card {
+    margin-bottom: 20px; /* Vertical spacing between rows */
+  }
+</style>
+
+<div class="cards-container">
+  <div class="card">
+    <img src="https://demo.gutenmate.com/demo-b/gravia/wp-content/uploads/sites/4/2024/02/watches-14-768x768.webp" alt="Watch Image" />
+    <div class="card-content">
+      <div>
+        <h2>CosmicGear MeteorFlex Digital Watch (Meteorite Gray)</h2>
+        <p class="text-sm">Smart Watches</p>
+      </div>
+      <div class="price">
+        <span class="discount">$100</span>
+        <span class="old-price">$50</span>
+      </div>
+      <button class="btn">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://demo.gutenmate.com/demo-b/gravia/wp-content/uploads/sites/4/2024/02/watches-14-768x768.webp" alt="Watch Image" />
+    <div class="card-content">
+      <div>
+        <h2>CosmicGear MeteorFlex Digital Watch (Meteorite Gray)</h2>
+        <p class="text-sm">Smart Watches</p>
+      </div>
+      <div class="price">
+        <span class="discount">$100</span>
+        <span class="old-price">$50</span>
+      </div>
+      <button class="btn">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://demo.gutenmate.com/demo-b/gravia/wp-content/uploads/sites/4/2024/02/watches-14-768x768.webp" alt="Watch Image" />
+    <div class="card-content">
+      <div>
+        <h2>CosmicGear MeteorFlex Digital Watch (Meteorite Gray)</h2>
+        <p class="text-sm">Smart Watches</p>
+      </div>
+      <div class="price">
+        <span class="discount">$100</span>
+        <span class="old-price">$50</span>
+      </div>
+      <button class="btn">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://demo.gutenmate.com/demo-b/gravia/wp-content/uploads/sites/4/2024/02/watches-14-768x768.webp" alt="Watch Image" />
+    <div class="card-content">
+      <div>
+        <h2>CosmicGear MeteorFlex Digital Watch (Meteorite Gray)</h2>
+        <p class="text-sm">Smart Watches</p>
+      </div>
+      <div class="price">
+        <span class="discount">$100</span>
+        <span class="old-price">$50</span>
+      </div>
+      <button class="btn">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://demo.gutenmate.com/demo-b/gravia/wp-content/uploads/sites/4/2024/02/watches-14-768x768.webp" alt="Watch Image" />
+    <div class="card-content">
+      <div>
+        <h2>CosmicGear MeteorFlex Digital Watch (Meteorite Gray)</h2>
+        <p class="text-sm">Smart Watches</p>
+      </div>
+      <div class="price">
+        <span class="discount">$100</span>
+        <span class="old-price">$50</span>
+      </div>
+      <button class="btn">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://demo.gutenmate.com/demo-b/gravia/wp-content/uploads/sites/4/2024/02/watches-14-768x768.webp" alt="Watch Image" />
+    <div class="card-content">
+      <div>
+        <h2>CosmicGear MeteorFlex Digital Watch (Meteorite Gray)</h2>
+        <p class="text-sm">Smart Watches</p>
+      </div>
+      <div class="price">
+        <span class="discount">$100</span>
+        <span class="old-price">$50</span>
+      </div>
+      <button class="btn">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+</div>
