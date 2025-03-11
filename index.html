@@ -1446,48 +1446,57 @@
                 </div>
             
                 <script>
-                    (function() {
-                        emailjs.init("YOUR_USER_ID"); // Replace with your EmailJS user ID
-                    })();
-            
-                    function showToast() {
-                        let toast = document.getElementById("toast");
-                        toast.classList.add("show");
-                        setTimeout(() => hideToast(), 3000);
-                    }
-            
-                    function hideToast() {
-                        let toast = document.getElementById("toast");
-                        toast.classList.remove("show");
-                    }
-            
-                    document.getElementById("contactForm").addEventListener("submit", function(event) {
-                        event.preventDefault();
-            
-                        let progress = document.querySelector(".progress");
-                        progress.style.width = "100%";
-            
-                        setTimeout(() => {
-                            let name = document.getElementById("name").value;
-                            let email = document.getElementById("email").value;
-                            let message = document.getElementById("message").value;
-            
-                            emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", {
-                                from_name: name,
-                                from_email: email,
-                                message: message
-                            }).then(() => {
-                                showToast();
-                                progress.style.width = "0";
-                                document.getElementById("contactForm").reset();
-                            }).catch((err) => {
-                                alert("Failed to send message. Try again!");
-                                console.error("EmailJS Error:", err);
-                                progress.style.width = "0";
-                            });
-                        }, 1000);
-                    });
-                </script>
+                  (function() {
+                      emailjs.init("YOUR_USER_ID"); // Replace with your EmailJS user ID
+                  })();
+              
+                  function showToast() {
+                      let toast = document.getElementById("toast");
+                      toast.classList.add("show");
+                      setTimeout(() => hideToast(), 3000);
+                  }
+              
+                  function hideToast() {
+                      let toast = document.getElementById("toast");
+                      toast.classList.remove("show");
+                  }
+              
+                  function showError(message) {
+                      const errorAlert = document.getElementById("errorAlert");
+                      errorAlert.innerText = message;
+                      errorAlert.style.display = "block";
+                      setTimeout(() => {
+                          errorAlert.style.display = "none";
+                      }, 4000);
+                  }
+              
+                  document.getElementById("contactForm").addEventListener("submit", function(event) {
+                      event.preventDefault();
+              
+                      let progress = document.querySelector(".progress");
+                      progress.style.width = "100%";
+              
+                      setTimeout(() => {
+                          let name = document.getElementById("name").value;
+                          let email = document.getElementById("email").value;
+                          let message = document.getElementById("message").value;
+              
+                          emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", {
+                              from_name: name,
+                              from_email: email,
+                              message: message
+                          }).then(() => {
+                              showToast();
+                              progress.style.width = "0";
+                              document.getElementById("contactForm").reset();
+                          }).catch((err) => {
+                              showError("Failed to send message. Try again!");
+                              console.error("EmailJS Error:", err);
+                              progress.style.width = "0";
+                          });
+                      }, 1000);
+                  });
+              </script>
             
               </div>
           </div>
