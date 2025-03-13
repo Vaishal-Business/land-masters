@@ -2809,13 +2809,13 @@ popup counter {
   margin-top: 65px;
 }
 
-.b_ecomus .section-inner.top {
+.b_land_master .section-inner.top {
   padding: 132px 0 207px 0;
   overflow-x: hidden;
 
 }
 
-.b_ecomus .b_e {
+.b_land_master .b_e {
   pointer-events: none;
   position: absolute;
   left: 0;
@@ -2825,7 +2825,7 @@ popup counter {
 
 }
 
-.b_ecomus .b_e .inner {
+.b_land_master .b_e .inner {
   border-radius: 20px 20px 105px 105px;
   border: 1px solid rgba(255, 255, 255, 0.12);
   background: -o-radial-gradient(-5.51% -4.72%, 117.63% 154.08%, rgba(0, 0, 0, 0.49) 0%, rgba(0, 0, 0, 0.00) 100%);
@@ -2840,7 +2840,7 @@ popup counter {
   pointer-events: auto;
 }
 
-.b_ecomus .b_e .inner>svg {
+.b_land_master .b_e .inner>svg {
   margin-bottom: 24px;
 }
 
@@ -2952,7 +2952,7 @@ popup counter {
 }
 
 /*  */
-.b_ecomus .rate {
+.b_land_master .rate {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2972,7 +2972,7 @@ popup counter {
   margin-bottom: 25px;
 }
 
-.b_ecomus .rating {
+.b_land_master .rating {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -2983,11 +2983,11 @@ popup counter {
   gap: 7px;
 }
 
-.b_ecomus .title {
+.b_land_master .title {
   margin-bottom: 0;
 }
 
-.b_ecomus .title .gradient {
+.b_land_master .title .gradient {
   background: -o-linear-gradient(182deg, #FF9C8D 25.93%, #D655A5 43.29%, #6053CB 60.3%);
   background: linear-gradient(268deg, #FF9C8D 25.93%, #D655A5 43.29%, #6053CB 60.3%);
   background-clip: text;
@@ -2996,7 +2996,7 @@ popup counter {
 
 }
 
-.b_ecomus .hdt-btn_install {
+.b_land_master .hdt-btn_install {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -3024,7 +3024,7 @@ popup counter {
   margin-top: 30px;
 }
 
-.b_ecomus .splide3 .splide_inner {
+.b_land_master .splide3 .splide_inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3035,28 +3035,28 @@ popup counter {
   gap: 34px;
 }
 
-.b_ecomus .splide3 .marquee {
+.b_land_master .splide3 .marquee {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 34px;
 }
 
-.b_ecomus .splide3 .marquee__item {
+.b_land_master .splide3 .marquee__item {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 25%;
   flex: 0 0 25%;
 }
 
-.b_ecomus .splide3 {
+.b_land_master .splide3 {
   position: relative;
 }
 
-.b_ecomus .splide3 .marquee {
+.b_land_master .splide3 .marquee {
   pointer-events: none;
 }
 
-.b_ecomus .splide3::before {
+.b_land_master .splide3::before {
   position: absolute;
   content: "";
   inset: 0px 0px -2px 0px;
@@ -4200,7 +4200,7 @@ popup counter {
     font-size: 50px;
   }
 
-  .b_ecomus .b_e .inner {
+  .b_land_master .b_e .inner {
     padding: 40px;
   }
 
@@ -4271,19 +4271,19 @@ popup counter {
     font-size: 40px;
   }
 
-  .b_ecomus .title {
+  .b_land_master .title {
     font-size: 45px;
   }
 
-  .b_ecomus .rate {
+  .b_land_master .rate {
     margin-bottom: 10px;
   }
 
-  .b_ecomus .hdt-btn_install {
+  .b_land_master .hdt-btn_install {
     margin-top: 25px;
   }
 
-  .b_ecomus .hdt-btn_install {
+  .b_land_master .hdt-btn_install {
     padding: 12px 25px;
   }
 
@@ -4455,7 +4455,7 @@ popup counter {
     padding-bottom: 500px;
   }
 
-  .b_ecomus .splide3 .marquee__item {
+  .b_land_master .splide3 .marquee__item {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 40%;
     flex: 0 0 40%;
@@ -4469,15 +4469,15 @@ popup counter {
     width: 100%;
   }
 
-  .b_ecomus .section-inner.top br {
+  .b_land_master .section-inner.top br {
     display: block !important;
   }
 
-  .b_ecomus .title {
+  .b_land_master .title {
     font-size: 30px;
   }
 
-  .b_ecomus .b_e .inner {
+  .b_land_master .b_e .inner {
     border-radius: 20px;
     padding: 20px;
   }
@@ -4536,8 +4536,8 @@ popup counter {
     padding: 70px 15px;
   }
 
-  .b_ecomus .splide3 .splide_inner,
-  .b_ecomus .splide3 .marquee {
+  .b_land_master .splide3 .splide_inner,
+  .b_land_master .splide3 .marquee {
     gap: 15px;
   }
 
@@ -4852,7 +4852,7 @@ popup counter {
 
 @media (min-width: 768px) {
 
-  .b_ecomus .section-inner.top {
+  .b_land_master .section-inner.top {
     padding-bottom: 700px !important;
   }
 }
@@ -4982,7 +4982,7 @@ popup counter {
     font-size: 18px;
   }
 
-  .b_ecomus .b_e .inner>svg {
+  .b_land_master .b_e .inner>svg {
     width: 150px;
     margin-bottom: 0;
   }
@@ -4991,7 +4991,7 @@ popup counter {
     margin-bottom: 20px;
   }
 
-  .b_ecomus .section-inner.top {
+  .b_land_master .section-inner.top {
     padding: 40px 0;
   }
 
@@ -5354,7 +5354,7 @@ popup counter {
   .demos .preview_btn a,
   .tabs_demo .tabs_group button,
   [filter-tabs] button,
-  .b_ecomus .hdt-btn_install {
+  .b_land_master .hdt-btn_install {
     height: 36px;
     font-size: 14px;
   }
@@ -5381,7 +5381,7 @@ popup counter {
     height: 200px;
   }
 
-  .b_ecomus .title {
+  .b_land_master .title {
     font-size: 24px;
   }
 
@@ -5614,20 +5614,20 @@ popup counter {
     font-size: 24px;
   }
 
-  .b_ecomus .b_e {
+  .b_land_master .b_e {
     position: relative;
   }
 
-  .b_ecomus .b_e .inner {
+  .b_land_master .b_e .inner {
     max-width: 95%;
     padding: 15px;
   }
 
-  .b_ecomus .title {
+  .b_land_master .title {
     font-size: 18px;
   }
 
-  .b_ecomus .rate {
+  .b_land_master .rate {
     font-size: 12px;
   }
 
@@ -5706,11 +5706,11 @@ popup counter {
     font-size: 35px;
   }
 
-  .b_ecomus .rate {
+  .b_land_master .rate {
     gap: 10px;
   }
 
-  .b_ecomus .section-inner.top {
+  .b_land_master .section-inner.top {
     padding-bottom: 0;
   }
 
@@ -5799,7 +5799,7 @@ popup counter {
     font-size: 10px;
   }
 
-  .b_ecomus .title {
+  .b_land_master .title {
     font-size: 15px;
   }
 
@@ -5850,7 +5850,7 @@ popup counter {
 }
 
 @media (max-width: 325px) {
-  .b_ecomus .title {
+  .b_land_master .title {
     font-size: 12px;
   }
 
@@ -6105,7 +6105,7 @@ popup counter {
   background: #FFF;
 }
 
-.b_ecomus .bg_blur {
+.b_land_master .bg_blur {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -6193,7 +6193,7 @@ popup counter {
 /* mobile */
 @media (max-width: 767px) {
 
-  .b_ecomus .bg_blur {
+  .b_land_master .bg_blur {
     display: none;
   }
 
