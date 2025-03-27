@@ -928,7 +928,7 @@
             <div class="col col-12 col-xxl-4" style="margin-left: 0px; scale: 1.1;">
               <div class="col-inner col-right">
                 <div class="bot wow animated fadeInUp" data-wow-delay="0s">
-                  <p>Land Master Building Materials LLC packs a punch with exclusive features you won’t find anywhere else. From 7 AM to 7 PM, get everything you need in one powerful store!</p>
+                  <p id="faq">Land Master Building Materials LLC packs a punch with exclusive features you won’t find anywhere else. From 7 AM to 7 PM, get everything you need in one powerful store!</p>
                 </div>
               </div>
             </div>
@@ -940,7 +940,7 @@
       </div>
     </section>
    
-    <div id="faq" style="width: 60vw;padding: 1rem;background: rgba(31, 41, 55, 0.7);border-radius: 1rem;backdrop-filter: blur(10px);box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);justify-self: center; position: relative;">
+    <div style="width: 60vw;padding: 1rem;background: rgba(31, 41, 55, 0.7);border-radius: 1rem;backdrop-filter: blur(10px);box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);justify-self: center; position: relative;">
       <h2 style="font-size: 1.75rem; font-weight: bold; color: #fff; margin-bottom: 1.5rem;">Frequently Asked Questions</h2>
       <div style="display: flex; flex-direction: column; gap: 1rem;">
         <div style="border-radius: 0.75rem; overflow: hidden;">
@@ -1455,20 +1455,168 @@
             <div class="tophead position-relative">
               <div class="wrap_linear">
               </div>
-              <div class="content">
-                <div class="d-flex flex-wrap justify-content-lg-between justify-content-center align-items-center">
-                  <p><span class="text-linear1">Ready to impress your visitors? Let's get started! <br></span>
-                    Level up your visitor engagement with eye-catching animations and visual effects.</p>
-                  <a href="https://themeforest.net/item/land_master-ultimate-html5-template/53417990" target="_blank" class="hdt-btn hdt-btn-style1 hdt-btn-hover-icon light_skew_hover">
-                    Get land_master Templates Now
-                    <svg class="hdt-icon" xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 8 8"
-                      fill="currentColor">
-                      <path d="M0.861539 8L0 7.13846L5.90769 1.23077H0.615385V0H8V7.38462H6.76923V2.09231L0.861539 8Z">
-                      </path>
-                    </svg>
-                  </a>
+              
+              <style>
+                /* Dark Mode Styling */
+                .dark-content {
+                  
+                  padding: 30px;
+                  border-radius: 15px;
+                  backdrop-filter: blur(0px);
+                  color: #fff;
+                  position: relative;
+                  overflow: hidden;
+                }
+              
+                .dark-header {
+                  font-size: 1.75rem;
+                  font-weight: 600;
+                  text-align: center;
+                  margin-bottom: 20px;
+                  color: #f1f1f1;
+                }
+              
+                .dark-slider-container {
+                  position: relative;
+                  overflow: hidden;
+                }
+              
+                .dark-slider-list {
+                  display: flex;
+                  gap: 30px;
+                  padding: 0;
+                  margin: 0;
+                  animation: flow 15s linear infinite;
+                }
+              
+                .dark-slider-item {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  transition: transform 0.3s ease, opacity 0.3s ease;
+                  min-height: 114px;
+                  min-width: 205px;
+                  flex: 0 0 auto; /* Ensure items don’t grow or shrink */
+                }
+              
+                .dark-slider-item img {
+                  max-height: 100px;
+                  object-fit: contain;
+                  transition: transform 0.3s ease, opacity 0.3s ease;
+                }
+              
+                .dark-slider-item:hover img {
+                  transform: scale(1.1);
+                  opacity: 0.9;
+                }
+              
+                /* Smooth flowing effect */
+                @keyframes flow {
+                  0% {
+                    transform: translateX(0);
+                  }
+                  100% {
+                    transform: translateX(-100%);
+                  }
+                }
+              
+                /* Mobile Flow Animation */
+                @keyframes flow-mobile {
+                  0% {
+                    transform: translateX(0);
+                  }
+                  100% {
+                    transform: translateX(-100%);
+                  }
+                }
+              
+                /* Media queries for responsive design */
+                @media (max-width: 992px) {
+                  .dark-slider-list {
+                    flex-wrap: nowrap; /* Keep them in one row */
+                  }
+              
+                  .dark-slider-item {
+                    width: 100%; /* Take full width */
+                  }
+              
+                  .dark-slider-list {
+                    animation: flow-mobile 15s linear infinite;
+                  }
+                }
+              
+                @media (max-width: 768px) {
+                  .dark-slider-item img {
+                    max-height: 90px;
+                  }
+              
+                  .dark-slider-item {
+                    width: 100%; /* 1 logo per row on smaller screens */
+                  }
+              
+                  .dark-slider-list {
+                    animation: flow-mobile 15s linear infinite;
+                  }
+                }
+              
+                @media (max-width: 576px) {
+                  .dark-slider-item img {
+                    max-height: 80px;
+                  }
+              
+                  .dark-slider-item {
+                    width: 100%; /* 1 logo per row on very small screens */
+                  }
+              
+                  .dark-slider-list {
+                    animation: flow-mobile 15s linear infinite;
+                  }
+                }
+              </style>
+              
+              <div class="dark-content">
+                <div class="dark-header">
+                  <h1 class="text-linear1">Partnering with top brands to ensure quality and reliability.</h1><br>
+                  
+                </div>
+              
+                <div class="dark-slider-container" id="brand-slider">
+                  <div class="splide__track">
+                    <ul class="dark-slider-list">
+                      <li class="dark-slider-item"><img src="/logos/ducab.png" alt="Ducab"></li>
+                      <li class="dark-slider-item"><img src="/logos/Jotun.png" alt="Jotun"></li>
+                      <li class="dark-slider-item"><img src="/logos/makita.png" alt="Makita"></li>
+                      <li class="dark-slider-item"><img src="/logos/Mapei.png" alt="Mapei"></li>
+                      <li class="dark-slider-item"><img src="/logos/National_Paints.png" alt="National Paints"></li>
+                      <li class="dark-slider-item"><img src="/logos/polybit.webp" alt="Polybit"></li>
+                      <li class="dark-slider-item"><img src="/logos/Schneider.png" alt="Schneider"></li>
+                      <li class="dark-slider-item"><img src="/logos/Terraco.jpeg" alt="Terraco"></li>
+                      <li class="dark-slider-item"><img src="/logos/Weber.png" alt="Weber"></li>
+                      <li class="dark-slider-item"><img src="/logos/WURTH_GROUP.png" alt="WURTH GROUP"></li>
+                    </ul>
+                  </div>
                 </div>
               </div>
+              
+              <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
+              <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css">
+              
+              <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                  new Splide('#brand-slider', {
+                    type: 'loop',
+                    perPage: 1, // Only show one logo at a time
+                    autoplay: true,
+                    interval: 2000,
+                    pauseOnHover: false,
+                    arrows: false,
+                    pagination: false,
+                  }).mount();
+                });
+              </script>
+              
+              
+              
             </div>
           </div>
           </div>
@@ -1480,41 +1628,11 @@
     
     
 
-    <section class="pucharse">
-      <div class="section-inner text-center">
-        <div class="tophead wow animated fadeInUp" data-wow-delay="0s">
-          <h3 class="title hdt-fz15 hdt-fw-400">Vist land_master now before<br><span class="gradient hdt-fw-700">It gets crowded!</span></h3>
-          <svg xmlns="http://www.w3.org/2000/svg" width="235" height="28" viewBox="0 0 235 28" fill="none">
-            <path
-              d="M2.29827 17.4961C61.8017 8.8201 121.735 4.29638 181.87 5.68538C198.989 6.07978 216.057 6.82298 233.165 7.64681C235.003 7.76056 235.147 5.03693 233.34 4.81756C202.914 1.12632 172 -0.0922449 141.373 0.324931C111.263 0.722441 81.1976 2.72953 51.3054 6.33755C34.6446 8.3619 18.0551 10.899 1.60082 14.1827C-0.556175 14.6163 0.158309 17.8135 2.29827 17.4961Z"
-              fill="url(#paint0_linear_6119_303)" />
-            <path
-              d="M27.27 27.7033C51.1394 24.4336 74.9666 21.132 98.9686 19.1268C123.394 17.094 147.911 16.289 172.418 16.3388C186.409 16.3686 200.418 16.8199 214.406 16.6637C214.568 16.6596 214.722 16.5954 214.839 16.4836C214.955 16.3718 215.025 16.2206 215.035 16.0598C215.045 15.899 214.994 15.7402 214.892 15.615C214.791 15.4897 214.646 15.4069 214.486 15.3829C202.215 13.7292 189.767 13.2767 177.407 12.82C165.048 12.3632 152.661 12.5891 140.313 12.969C115.925 13.7576 91.5057 15.5316 67.3118 18.8106C53.7497 20.6502 40.1944 22.7739 26.8445 25.7803C25.6203 26.0516 26.0206 27.8264 27.2189 27.6562L27.27 27.7033Z"
-              fill="url(#paint1_linear_6119_303)" />
-            <defs>
-              <linearGradient id="paint0_linear_6119_303" x1="-2.59464e-08" y1="15" x2="233.014" y2="36.5128"
-                gradientUnits="userSpaceOnUse">
-                <stop stop-color="#76F5BC" />
-                <stop offset="0.552083" stop-color="#221DF3" />
-                <stop offset="1" stop-color="#EBEEF9" />
-              </linearGradient>
-              <linearGradient id="paint1_linear_6119_303" x1="-2.59464e-08" y1="15" x2="233.014" y2="36.5128"
-                gradientUnits="userSpaceOnUse">
-                <stop stop-color="#76F5BC" />
-                <stop offset="0.552083" stop-color="#221DF3" />
-                <stop offset="1" stop-color="#EBEEF9" />
-              </linearGradient>
-            </defs>
-          </svg>
-        </div>
-        
-      </div>
-    </section>
+    
 
 
   </main>
   <footer>
-    <!-- place footer here -->
     <section class="footer">
       <div class="footer-inner">
         <div class="bg">
@@ -1522,19 +1640,20 @@
             src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
             data-src="./assets/images/footer/bg.png" alt="Footer layer">
         </div>
-        <div class="boxed">
-          <div class="policy">
-            <a href="https://themesflat.co/html/land_master/terms-conditions.html" target="_blank">Privacy policy</a>
-            <a href="https://themesflat.co/html/land_master/terms-conditions.html" target="_blank">Refund policy</a>
-          </div>
+        <div class="boxed" style="justify-content: center;">
           <div class="logo">
             <a href="#" class="logo_cta"> 
               <img src="assets/images/logo.png" style="width: 310px; height: auto;" alt="land_master logo">
               </a>
           </div>
-          <div class="copy-right">
-            &copy; 2024 <a href="https://themeforest.net/item/land_master-ultimate-html5-template/53417990" target="_blank">land_master</a>
+          <div class="copy-right" style="top:11px; position: relative;">
+            &copy; <span id="year"></span> <a href="#">Land Master</a>
           </div>
+          
+          <script>
+            document.getElementById("year").textContent = new Date().getFullYear();
+          </script>
+          
         </div>
 
       </div>
@@ -1595,8 +1714,8 @@
       <div class="brand_logo">
         <img loading="lazy" class="lazyload"
           src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-          data-src="./assets/images/logo_white.svg" alt="Logo land_master">
-        <a href="https://themesflat.co/land_master" class="logo_cta"></a>
+          data-src="./assets/images/logo.png" alt="Logo land_master">
+        <a href="#" class="logo_cta"></a>
       </div>
       <div class="menu_list">
         <ul>
